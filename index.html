@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>08NODE — Design Deck Generator</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
@@ -2987,7 +2988,7 @@ function renderPreviewNow() {
             <span>Back</span>
           </div>
         </div>
-        <p>Upload images to start creating your card deck, or drop them here.</p>
+        <p>Upload images to start creating your Design Deck, or drop them here.</p>
       </div>`;
     if (backLogoDataUrl) {
       const placeholderBack = previewArea.querySelector('.placeholder-card.back');
@@ -3073,7 +3074,7 @@ function generateSheetPreview() {
             <span>Back</span>
           </div>
         </div>
-        <p>Upload images to start creating your card deck, or drop them here.</p>
+        <p>Upload images to start creating your Design Deck, or drop them here.</p>
       </div>`;
     return;
   }
@@ -3535,7 +3536,7 @@ function buildDeckPdf(jpegs, pageWmm, pageHmm, dpi = 300) {
   return out;
 }
 
-function downloadPdf(pdfBytes, filename = 'card-deck.pdf') {
+function downloadPdf(pdfBytes, filename = 'design-deck.pdf') {
   const blob = new Blob([pdfBytes], { type: 'application/pdf' });
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
@@ -3602,7 +3603,7 @@ async function downloadAsImages() {
             name: names[i] || 'card_' + String(i + 1).padStart(3, '0') + '.png',
             bytes: canvasToPngBytes(canvas)
           }));
-          downloadBlob(buildZipArchive(entries), 'card-deck-images.zip');
+          downloadBlob(buildZipArchive(entries), 'design-deck-images.zip');
           resolve();
         } catch (e) {
           reject(e);

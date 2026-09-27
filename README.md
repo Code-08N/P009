@@ -2,6 +2,8 @@
 
 **[Open the Design Deck →](https://code-08n.github.io/P009/)**
 
+![Design Deck](docs/design-deck.png)
+
 **Design Deck** is an experimental educational tool for design ideation.
 
 It was developed to help students move away from collecting random references or copying visual forms, and instead learn how to **extract, combine and transform ideas** from different sources.

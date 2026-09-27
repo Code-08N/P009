@@ -99,6 +99,6 @@ The structure, card selection and methodology are intended to evolve through tea
 
 Except where otherwise noted, the original methodology, written content and graphics of Design Deck are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
 
-© 2026 Othmane / 08NODE
+© 2026 Oth / 08NODE
 
 Third-party images and materials are not covered by this license and remain subject to their respective copyright terms.
